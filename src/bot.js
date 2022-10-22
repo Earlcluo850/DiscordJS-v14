@@ -24,7 +24,7 @@ for (const folder of functionFolders) {
 client.handleEvents();
 client.handleCommands();
 client.handleComponents();
-client.login("MTAyMDU1ODg4OTg1MjM1MDU1NA.G8tYvy.M3G6gdzJ8CaLv2BSL6u9Yd-gRYBuYWafFd3GEk");
+client.login(token);
 (async () => {
   await connect(databaseToken).catch(console.error);
 })();
