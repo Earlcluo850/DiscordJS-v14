@@ -75,8 +75,8 @@ module.exports = {
       (c) => c.id === channelCategory
     );
     const reason = options.getString("reason")
-      ? options.getString("reason")
-      : "No reason provided";
+    ? options.getString("reason")
+    : "No reason provided";
     const channelTypeInput = options.getString("type");
     let channelTypeSet = null;
     if (channelTypeInput == "channelText") {
