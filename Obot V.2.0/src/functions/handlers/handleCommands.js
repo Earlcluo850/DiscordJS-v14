@@ -1,5 +1,6 @@
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
+const {token} = process.env;
 const chalk = require("chalk");
 const fs = require("fs");
 
@@ -21,7 +22,7 @@ module.exports = (client) => {
 
     const clientId = "1020558889852350554";
 
-    const rest = new REST({ version: "9" }).setToken(process.env.token);
+    const rest = new REST({ version: "9" }).setToken(token);
     try {
       console.log(chalk.cyan("[COMMAND HANDLER]"), "🕕 Reloading slash commands...");
 
